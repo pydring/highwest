@@ -1,0 +1,494 @@
+body {
+    background: black;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 12; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: hidden; /* Enable scroll if needed */
+    background-color: black; /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    width: 100%; /* Could be more or less, depending on screen size */
+    height: 750px;
+    background-color: black;
+}
+
+#modalaccent {
+    width: 90%;
+    height: 650px;
+    border: 3px solid #FFB200;
+    left: 5%;
+    top: 50px;
+    position: absolute;
+}
+
+
+
+select {
+    font-family: Marion;
+    font-size: 48pt;
+    font-style: oblique;
+    color: #FFB200;
+    border: none;
+    background: #333333;
+    height: 200px;
+    width: 200px;
+}
+
+select:active,
+select::selection {
+    font-size: 18pt;
+}
+
+#selectyear {
+    font-family: Marion;
+    font-size: 48pt;
+    font-style: oblique;
+    color: #FFB200;
+    border: none;
+    background: #333333;
+    height: 200px;
+    width: 400px;
+}
+
+#selectyear:active,
+#selectyear::selection {
+    font-size: 18pt;
+}
+
+#month {
+    height: 200px;
+    width: 200px;
+    background-color: #333333;
+    position: absolute;
+    top: 300px;
+    left: 150px;
+    z-index: 12;
+    overflow: hidden;
+}
+
+#day {
+    height: 200px;
+    width: 200px;
+    background-color: #333333;
+    font-family: Marion;
+    font-size: 48pt;
+    font-style: oblique;
+    color: #FFB200;
+    position: absolute;
+    top: 300px;
+    left: 450px;
+    z-index: 12;
+}
+
+#year {
+    height: 200px;
+    width: 400px;
+    background-color: #333333;
+    font-family: Marion;
+    font-size: 48pt;
+    font-style: oblique;
+    color: #FFB200;
+    position: absolute;
+    top: 300px;
+    left: 750px;
+    z-index: 12;
+}
+
+#enter {
+    width: 200px;
+    height: 50px;
+    color: black;
+    background: #FFB200;
+    font-family: Marion;
+    font-size: 24pt;
+    font-style: oblique;
+    position: absolute;
+    top: 685px;
+    left: 100px;
+    border: none;
+}
+
+#ageheader {
+
+}
+
+#oldenough {
+
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    right:24px;
+    top:6px;
+    position: relative;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#homeimage {
+    width: 100%;
+    height: 1430px;
+    position: absolute;
+    background-image: url("../images/whiskey-splash.jpg");
+    background-size: 1500px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    top: -180px;
+    z-index: -2;
+    padding: 0;
+    margin: 0;
+}
+
+#gradient {
+    background-image: linear-gradient(transparent 25%, black);
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    position: absolute;
+
+}
+
+#logo {
+    font-family: Marion;
+    font-size: 50px;
+    width: 300px;
+    height: 100px;
+    color: white;
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    margin-left: -150px;
+    z-index: 1;
+}
+
+#spiritsHeader {
+    position: absolute;
+    top: 1275px;
+    left: 25%;
+    font-family: Marion;
+    font-size: 24pt;
+    color: #FFB200;
+    z-index: 10;
+}
+
+#filternav {
+    position: absolute;
+    height: 75px;
+    width: 1000px;
+    top: 70px;
+    left: 50%;
+    margin-left: -500px;
+    text-align: center;
+}
+
+button, .filter {
+    list-style: none;
+    margin-left: 2px;
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: dimgray;
+    font-family: Marion;
+    position: relative;
+    font-size: 16pt;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    transition: all .5s ease;
+    z-index: 5;
+    opacity: .8;
+    color: white;
+}
+
+button, .filter:hover {
+    background-color: lightslategrey;
+}
+
+button:focus {
+    outline: none;
+}
+
+button, .filter .active:hover {
+    border: 0px solid lightslategrey;
+    background-color: black;
+    font-family: Marion, "Times New Roman", Serif;
+    color: #FFB200;
+    opacity: 1;
+}
+
+.active {
+    border: 0px solid lightslategrey;
+    background-color: black;
+    font-family: Marion, "Times New Roman", Serif;
+    color: #FFB200;
+    opacity: 1;
+
+}
+
+#productwrapper {
+    width: 100%;
+    height: 3000px;
+    overflow: hidden;
+    top: 1250px;
+    background-color: black;
+    position: absolute;
+    z-index:-1;
+}
+
+#gradienttwo {
+    background-image: linear-gradient(transparent 60%, #240a02);
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    position: absolute;
+
+}
+
+#productsection {
+    position: absolute;
+    top: 75px;
+    width: 100%;
+    height: inherit;
+}
+
+.product {
+    width: 30%;
+    height: 300px;
+    background-color: black;
+    position: relative;
+    z-index:12;
+    margin-left: 180px;
+    margin-top: 100px;
+    display: block;
+}
+
+
+.name {
+    position: absolute;
+    font-family: Marion;
+    font-size: 18pt;
+    font-style: italic;
+    top: 25px;
+    left: 205px;
+    color: dimgray;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+/*products*/
+
+.americanprairiebourbon {
+    background-image: url("../images/americanprairiebourbon.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.campfire {
+    background-image: url("../images/campfire.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.doublerye {
+    background-image: url("../images/doublerye.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.limitedsighting {
+    background-image: url("../images/limitedsighting.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.midwinter {
+    background-image: url("../images/midwinternightsdram.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.rendevousrye {
+    background-image: url("../images/rendevousrye.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.yipeekiay {
+    background-image: url("../images/yipeekiay.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.forteenyear {
+    background-image: url("../images/yearlightwhiskey.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.thirtysixvote {
+    background-image: url("../images/votebarrelaged.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.highwest7000 {
+    background-image: url("../images/highwest7000.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.silverwhiskey {
+    background-image: url("../images/silverwhiskey.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.vallytan {
+    background-image: url("../images/vallytan.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.barrelselect {
+    background-image: url("../images/barrelselectprogram.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#ourstorywrapper {
+    background-color: black;
+    width: 100%;
+    height: 850px;
+    position: absolute;
+    top: 4250px;
+}
+
+.boozemodal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    margin: 0%;
+    overflow: hidden; /* Enable scroll if needed */
+    background-color: black; /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.6); /* Black w/ opacity */
+}
+
+.boozemodal-content {
+    width: 50%; /* Could be more or less, depending on screen size */
+    height: 50%;
+    margin:15% 0 0 25%;
+    position: absolute;
+    overflow: hidden;
+    background-color: dimgray;
+}
+
+.boozemodal-pic{
+    height:366px;
+    width:310px;
+    position: absolute;
+    top: 20px;
+    left: 35px;
+}
+
+.boozemodal-title{
+    position: absolute;
+    top: 23px;
+    left: 300px;
+    font-family: Marion;
+    font-style: oblique;
+    font-size: 24pt;
+    color: #FFB200;
+}
+
+.boozemodal-text{
+    left: 310px;
+    top: 64px;
+    margin-right: 20px;
+    position: absolute;
+    font-family: Marion;
+    font-size: 12pt;
+    color: #FFB200;
+}
+
+#ourstoryheader {
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    width: 200px;
+    margin-left: -100px;
+    font-family: Marion;
+    font-style: oblique;
+    color: #FFB200;
+    font-size: 36pt;
+    background-color: black;
+    z-index: 3;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#ourstorytext {
+    position: absolute;
+    height: 600px;
+    width: 1200px;
+    top: 125px;
+    left: 50%;
+    margin-left: -600px;
+    border-top: 2px solid #FFB200;
+    border-bottom: 2px solid #FFB200;
+    z-index: 2;
+    padding-left: -25px;
+}
+
+.ourstorycolumn {
+    width: 375px;
+    height: 550px;
+    top: 25px;
+    margin-right: 25px;
+    position: relative;
+    color: #FFB200;
+    font-family: Marion;
+    font-size: 18pt;
+    float: left;
+}
+
+
+
+
+
+
+
+
+
+

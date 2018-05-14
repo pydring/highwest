@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+
+    <link rel="stylesheet" href="css/iziModal.min.css">
+
+    <link rel="stylesheet" href="css/highwatercss.css">
+
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+
+    <script type="text/javascript" src="js/rellax.min.js"></script>
+
+    <script type="text/javascript" src="js/parallax_scroll.js"></script>
+
+    <script type="text/javascript" src="js/isotope.min.js"></script>
+
+    <script type="text/javascript" src="js/isotope.js"></script>
+
+    <script type="text/javascript" src="js/modal.js"></script>
+
+
+    <meta charset="UTF-8">
+    <title>High Water Whiskey</title>
+</head>
+<body>
+
+<div id="homeimage" class="rellax" data-rellax-speed="-2">
+    <div id="gradient"></div>
+</div>
+
+<div id="logo" class="rellax" data-rellax-speed="3">
+    HIGH WEST DISTILLERY
+</div>
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+        <form id="month" role="form">
+            <select name="Month">
+                <option value="none"> MM</option>
+                <option value="1">January</option>
+                <option value="2">February</option>
+                <option value="3">March</option>
+                <option value="4">April</option>
+                <option value="5">May</option>
+                <option value="6">June</option>
+                <option value="7">July</option>
+                <option value="8">August</option>
+                <option value="9">September</option>
+                <option value="10">October</option>
+                <option value="11">November</option>
+                <option value="12">December</option>
+            </select>
+        </form>
+        <form id="day">
+            <select name="Day">
+                <option value="none"> DD</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+                <option value="31">31</option>
+            </select>
+        </form>
+        <form id="year">
+            <select name="Year" id="selectyear">
+                <option value="none"> YYYY</option>
+                <option value="1940">1940</option>
+                <option value="1941">1941</option>
+                <option value="1942">1942</option>
+                <option value="1943">1943</option>
+                <option value="1944">1944</option>
+                <option value="1945">1945</option>
+                <option value="1946">1946</option>
+                <option value="1947">1947</option>
+                <option value="1948">1948</option>
+                <option value="1949">1949</option>
+                <option value="1950">1950</option>
+                <option value="1951">1951</option>
+                <option value="1952">1952</option>
+                <option value="1953">1953</option>
+                <option value="1954">1954</option>
+                <option value="1955">1955</option>
+                <option value="1956">1956</option>
+                <option value="1957">1957</option>
+                <option value="1958">1958</option>
+                <option value="1959">1959</option>
+                <option value="1960">1960</option>
+                <option value="1961">1961</option>
+                <option value="1962">1962</option>
+                <option value="1963">1963</option>
+                <option value="1964">1964</option>
+                <option value="1965">1965</option>
+                <option value="1966">1966</option>
+                <option value="1967">1967</option>
+                <option value="1968">1968</option>
+                <option value="1969">1969</option>
+                <option value="1970">1970</option>
+                <option value="1971">1971</option>
+                <option value="1972">1972</option>
+                <option value="1973">1973</option>
+                <option value="1974">1974</option>
+                <option value="1975">1975</option>
+                <option value="1976">1976</option>
+                <option value="1977">1977</option>
+                <option value="1978">1978</option>
+                <option value="1979">1979</option>
+                <option value="1980">1980</option>
+                <option value="1981">1981</option>
+                <option value="1982">1982</option>
+                <option value="1983">1983</option>
+                <option value="1984">1984</option>
+                <option value="1985">1985</option>
+                <option value="1986">1986</option>
+                <option value="1987">1987</option>
+                <option value="1988">1988</option>
+                <option value="1989">1989</option>
+                <option value="1990">1990</option>
+                <option value="1991">1991</option>
+                <option value="1992">1992</option>
+                <option value="1993">1993</option>
+                <option value="1994">1994</option>
+                <option value="1995">1995</option>
+                <option value="1996">1996</option>
+                <option value="1997">1997</option>
+                <option value="1998">1998</option>
+                <option value="1999">1999</option>
+                <option value="2000">2000</option>
+                <option value="2001">2001</option>
+                <option value="2002">2002</option>
+                <option value="2003">2003</option>
+                <option value="2004">2004</option>
+                <option value="2005">2005</option>
+                <option value="2006">2006</option>
+                <option value="2007">2007</option>
+                <option value="2008">2008</option>
+                <option value="2009">2009</option>
+                <option value="2010">2010</option>
+                <option value="2011">2011</option>
+                <option value="2012">2012</option>
+                <option value="2013">2013</option>
+                <option value="2014">2014</option>
+            </select>
+        </form>
+        <div id="modalaccent"></div>
+        <button id="enter"> Enter</button>
+        <span class="close">&times;</span>
+        <p>Some text in the Modal..</p>
+    </div>
+
+</div>
+
+<!-- Product start -->
+
+<div id="spiritsHeader">Spirits</div>
+
+<div id="productwrapper">
+
+    <div id="gradienttwo"></div>
+
+    <!-- Filter Buttons -->
+
+    <div id="filternav">
+        <button class="filter active" onclick="filterSelection('all')" data-filter="*">
+            All Spirits
+        </button>
+        <button class="filter" onclick="filterSelection('whiskey')" data-filter=".core">
+            Core Products
+        </button>
+        <button class="filter" onclick="filterSelection('whiskey')" data-filter=".limited">
+            Limited Release
+        </button>
+        <button class="filter" onclick="filterSelection('spec-release')" data-filter=".other">
+            Other Products
+        </button>
+        <button class="filter" onclick="filterSelection('cocktail')" data-filter=".utah">
+            Utah Only
+        </button>
+    </div>
+
+
+
+    <div id="productsection" class="rellax" data-rellax-speed="-4">
+
+        <div class="product grid-item americanprairiebourbon rellax" data-rellax-speed="1"
+                onclick="document.getElementById('apb').style.display ='block'">
+            <div class="name">
+                American Prairie Bourbon
+            </div>
+        </div>
+        <div class="product grid-item whiskey campfire rellax" data-rellax-speed="1"
+             onclick="document.getElementById('campfire').style.display ='block'">
+            <div class="name">
+                Campfire
+            </div>
+        </div>
+        <div class="product grid-item whiskey doublerye rellax" data-rellax-speed="1"
+             onclick="document.getElementById('dr').style.display ='block'">
+            <div class="name">
+                Double Rye!
+            </div>
+        </div>
+        <div class="product grid-item whiskey limitedsighting rellax" data-rellax-speed="1"
+             onclick="document.getElementById('bourye').style.display ='block'">
+            <div class="name">
+                Bourye®
+            </div>
+        </div>
+        <div class="product grid-item whiskey midwinter rellax" data-rellax-speed="1"
+             onclick="document.getElementById('mw').style.display ='block'">
+            <div class="name">
+                A Midwinter Night's Dram®
+            </div>
+        </div>
+        <div class="product grid-item whiskey rendevousrye rellax" data-rellax-speed="1"
+             onclick="document.getElementById('rr').style.display ='block'">
+            <div class="name">
+                Rendezvous Rye
+            </div>
+        </div>
+        <div class="product grid-item whiskey spec-release yipeekiay rellax" data-rellax-speed="1"
+             onclick="document.getElementById('yp').style.display ='block'">
+            <div class="name">
+                Yippee Ki-Yay®
+            </div>
+        </div>
+        <div class="product grid-item whiskey spec-release forteenyear rellax" data-rellax-speed="1"
+             onclick="document.getElementById('ft').style.display ='block'">
+            <div class="name">
+                14 Year Light Whiskey
+            </div>
+        </div>
+        <div class="product grid-item whiskey spec-release thirtysixvote rellax" data-rellax-speed="1"
+             onclick="document.getElementById('vote').style.display ='block'">
+            <div class="name">
+                The 36th Vote Barrel Aged Manhattan
+            </div>
+        </div>
+        <div class="product grid-item whiskey spec-release highwest7000 rellax" data-rellax-speed="1"
+             onclick="document.getElementById('hws').style.display ='block'">
+            <div class="name">
+                High West 7000'
+            </div>
+        </div>
+        <div class="product grid-item whiskey spec-release silverwhiskey rellax" data-rellax-speed="1"
+             onclick="document.getElementById('sw').style.display ='block'">
+            <div class="name">
+                Silver Whiskey Western Oat
+            </div>
+        </div>
+        <div class="product grid-item whiskey spec-release vallytan rellax" data-rellax-speed="1"
+             onclick="document.getElementById('vt').style.display ='block'">
+            <div class="name">
+                Valley Tan®
+            </div>
+        </div>
+        <div class="product grid-item whiskey spec-release barrelselect rellax" data-rellax-speed="1"
+             onclick="document.getElementById('bs').style.display ='block'">
+            <div class="name">
+                Barrel Select Program
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="boozemodal" id="apb">
+    <div class="boozemodal-content">
+        <div class="boozemodal-pic americanprairiebourbon">
+        </div>
+        <div class="boozemodal-title">American Prairie Bourbon</div>
+        <div class="boozemodal-text">September is Bourbon Heritage Month. Celebrate with the spirit that helps conserve the West. For each bottle of American Prairie Bourbon™ sold, High West donates 10% of its after-tax profits to the American Prairie Reserve. Learn More at www.americanprairie.org
+
+            American Prairie Bourbon™ is a complex blend of straight bourbons producing an aromatic whiskey that helps preserve the West.
+            <br><br>
+
+            How to Enjoy<br><br>
+            Great in cocktails, but has the complexity to stand on its own.<br>
+
+        </div>
+        <span class="close" onclick="document.getElementById('apb').style.display ='none'">&times;</span>
+    </div>
+</div>
+
+<div class="boozemodal" id="campfire">
+    <div class="boozemodal-content">
+        <div class="boozemodal-pic campfire">
+        </div>
+        <div class="boozemodal-title">Campfire</div>
+        <div class="boozemodal-text">
+            High West Campfire is the world’s only blend of Scotch, bourbon and rye whiskeys. A very unusual, distinctive, yet delicious whiskey.
+<br><br>
+            How to Enjoy<br><br>
+            Campfire is best enjoyed with old friends and good looking strangers. Sip straight or with a little water. Campfire also puts a unique twist on classic cocktails
+        </div>
+        <span class="close" onclick="document.getElementById('campfire').style.display ='none'">&times;</span>
+    </div>
+</div>
+
+<div class="boozemodal" id="dr">
+    <div class="boozemodal-content">
+        <div class="boozemodal-pic doublerye">
+        </div>
+        <div class="boozemodal-title">Double Rye!</div>
+        <div class="boozemodal-text">The Spiciest Rye Whiskey in the World!
+
+            <br><br>How to Enjoy<br><br>
+            Thanks to its balance of cinnamon, anise, and honey, High West Double Rye! stands on its own in cocktails, but is great served neat, with a little water, or on the rocks. Its spirited flavor fortifies classic cocktails like the Manhattan and Old Fashioned. We recommend it for most occasions - sipping it in solitude by a campfire, savoring with favorite old friends, or sharing it with a good-looking stranger. See our "Cocktails" section for cocktails that our friends have helped us out with.</div>
+        <span class="close" onclick="document.getElementById('dr').style.display ='none'">&times;</span>
+    </div>
+</div>
+
+<div class="boozemodal" id="bourye">
+    <div class="boozemodal-content">
+        <div class="boozemodal-pic limitedsighting">
+        </div>
+        <div class="boozemodal-title">Bourye®</div>
+        <div class="boozemodal-text">A unique and premium blend of rich bourbon and rye whiskeys, making for a premier sipping whiskey and one of High West’s all-time favorites.
+
+            <br><br>How to Enjoy<br><br>
+            Bourye is best enjoyed around a campfire while looking at the Milky Way. Sip straight or with a little water. Not recommended with ice.</div>
+        <span class="close" onclick="document.getElementById('bourye').style.display ='none'">&times;</span>
+    </div>
+</div>
+
+<div class="boozemodal" id="mw">
+    <div class="boozemodal-content">
+        <div class="boozemodal-pic midwinter">
+        </div>
+        <div class="boozemodal-title">A Midwinter Night's Dram®</div>
+        <span class="close" onclick="document.getElementById('mw').style.display ='none'">&times;</span>
+    </div>
+</div>
+
+<div class="boozemodal" id="rr">
+    <div class="boozemodal-content">
+        <div class="boozemodal-pic rendevousrye">
+        </div>
+        <div class="boozemodal-title">Rendezvous Rye</div>
+        <span class="close" onclick="document.getElementById('rr').style.display ='none'">&times;</span>
+    </div>
+</div>
+
+<div class="boozemodal" id="yp">
+    <div class="boozemodal-content">
+        <div class="boozemodal-pic yipeekiay">
+        </div>
+        <div class="boozemodal-title">Yippee Ki-Yay®</div>
+        <span class="close" onclick="document.getElementById('yp').style.display ='none'">&times;</span>
+    </div>
+</div>
+
+<div class="boozemodal" id="ft">
+    <div class="boozemodal-content">
+        <div class="boozemodal-pic forteenyear">
+        </div>
+        <div class="boozemodal-title">14 Year Light Whiskey</div>
+        <span class="close" onclick="document.getElementById('ft').style.display ='none'">&times;</span>
+    </div>
+</div>
+
+<div class="boozemodal" id="vote">
+    <div class="boozemodal-content">
+        <div class="boozemodal-pic thirtysixvote">
+        </div>
+        <div class="boozemodal-title">The 36th Vote Barrel Aged Manhattan</div>
+        <span class="close" onclick="document.getElementById('vote').style.display ='none'">&times;</span>
+    </div>
+</div>
+
+<div class="boozemodal" id="hws">
+    <div class="boozemodal-content">
+        <div class="boozemodal-pic highwest7000">
+        </div>
+        <div class="boozemodal-title">High West 7000'</div>
+        <span class="close" onclick="document.getElementById('hws').style.display ='none'">&times;</span>
+    </div>
+</div>
+
+<div class="boozemodal" id="sw">
+    <div class="boozemodal-content">
+        <div class="boozemodal-pic silverwhiskey">
+        </div>
+        <div class="boozemodal-title">Silver Whiskey Western Oat</div>
+        <span class="close" onclick="document.getElementById('sw').style.display ='none'">&times;</span>
+    </div>
+</div>
+
+<div class="boozemodal" id="vt">
+    <div class="boozemodal-content">
+        <div class="boozemodal-pic vallytan">
+        </div>
+        <div class="boozemodal-title">Vally Tan®</div>
+        <span class="close" onclick="document.getElementById('vt').style.display ='none'">&times;</span>
+    </div>
+</div>
+
+<div class="boozemodal" id="bs">
+    <div class="boozemodal-content">
+        <div class="boozemodal-pic barrelselect">
+        </div>
+        <div class="boozemodal-title">Barrel Select Program</div>
+        <span class="close" onclick="document.getElementById('bs').style.display ='none'">&times;</span>
+    </div>
+</div>
+
+
+<div id="ourstorywrapper">
+    <div id="ourstoryheader">Our Story</div>
+    <div id="ourstorytext">
+        <div class="ourstorycolumn"><p>High West Distillery was founded in 2006 by David Perkins and his wife, Jane.
+            David, a former biochemist, was inspired to open his own distillery after seeing the parallels between the
+            fermentation and distilling process and his own work in biochemistry during a trip to the Maker’s Mark
+            Distillery in Loretto, Kentucky. In 2004, David and his family relocated to Park City, Utah to begin their
+            new venture, where they began distilling in 2007. They chose Park City because of David’s love of the Old
+            West and Utah’s little-known whiskey history (see Utah’s Distilling History for more).
+        </p>
+        </div>
+        <div class="ourstorycolumn"><p>High West began with humble roots, opening a small, 250-gallon still and Saloon
+            in an historic livery stable and garage. What was once a small operation in downtown Park City has grown to
+            be an internationally-recognized brand with four unique locations. In 2015, High West opened their
+            distillery in Wanship, Utah, which acts as a space for educational whiskey tasting, pairings and tours, and
+            houses a 1600-gallon copper pot still. Meanwhile, the Saloon continues to operate as a must-visit
+            gastro-distillery, featuring alpine-inspired western fare alongside the original still, the Nelson Cottage
+            offers unique whiskey-paired dinners, and the Saloon at the Salt Lake City airport allows for some last
+            tastes of High West on the way out of town.
+        </p>
+        </div>
+        <div class="ourstorycolumn"><p>High West’s products have received numerous, accolades and awards. In 2011,
+            Whisky Advocate, America’s leading whiskey magazine, named High West its “Whiskey Pioneer of the Year.” We
+            love to show off our traditional 1,600-gallon copper pot still and share the wonders of whiskey with our
+            guests. Swing by the new distillery to take an educational whiskey tour and if you’re feeling adventurous, a
+            whiskey tasting as well. Call 435-649-8300 or visit the Tours Page to schedule your tour at our truly unique
+            distillery in the mountains.
+        </p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+
+/*     $('#productsection').isotope({
+// options...
+itemSelector: '.product',
+layoutMode: 'fitRows'
+});
+
+$('#filter-nav button').on('click', 'button')(function(){
+$('#filter-nav button').removeClass('active');
+$(this).addClass('active');
+
+var filterValue = $(this).attr('data-filter');
+$('#productsection').isotopes({
+filter: selector
+});
+return false;
+
+});
+*/
